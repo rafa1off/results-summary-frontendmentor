@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+
+    /*Primary*/
+    --light_red: hsl(0, 100%, 67%);
+    --orangey_yellow: hsl(39, 100%, 56%);
+    --green_teal: hsl(166, 100%, 37%);
+    --cobalt_blue: hsl(234, 85%, 45%);
+
+    /*Gradients*/
+        /*background*/
+        --light_slate_blue: hsl(252, 100%, 67%);
+        --light_royal_blue: hsl(241, 81%, 54%);
+        /*circle*/
+        --violet_blue: hsla(256, 72%, 46%, 1);
+        --persian_blue: hsla(241, 72%, 46%, 0);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --pale_blue: hsl(221, 100%, 96%);
+    --light_lavender: hsl(241, 100%, 89%);
+    --dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+main {
+    height: 97vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box {
+    box-shadow: 10px 10px 35px -7px var(--dark_gray_blue);
+    border-radius: 25px;
+    width: 750px;
+    height: 500px;
+    display: flex;
+}
+
+.result-box, .summary-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+.result-box {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(var(--light_slate_blue), var(--light_royal_blue));
+    text-align: center;
+    color: var(--white);
+}
+
+.numbers {
+    background-image: linear-gradient(var(--violet_blue), var(--persian_blue));
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-box h2, .total, p {
+    color: var(--light_lavender);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.summary-box > h2 {
+    color: var(--dark_gray_blue);
+}
+
+.main-number {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: var(--light_red);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: var(--orangey_yellow);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color: var(--green_teal);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: var(--cobalt_blue);
+}
+
+.reaction :last-child, .memory :last-child, .verbal :last-child, .visual :last-child {
+    margin-left: auto;
+}
+
+.inner-number {
+    color: var(--dark_gray_blue );
+    font-weight: bold;
+}
+
+.of-number {
+    color: var(--light_lavender);
+}
+
+.continue {
+    padding: 15px;
+    border-radius: 30px;
+    border-style: none;
+    color: var(--light_lavender);
+    background-color: var(--dark_gray_blue);
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.continue:hover {
+    background-image: linear-gradient(var(--light_slate_blue), var(--light_royal_blue));
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    .align {
+        align-items: normal;
+        justify-content: start;
+    }
+
+    .main-box {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+        justify-content: normal;
+    }
+
+    .numbers {
+        height: 150px;
+        width: 150px;
+    }
+
+    .summary-box, .result-box {
+        width: auto;
+    }
+
+    .result-box {
+        height: 35%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .summary-box {
+        height: 45%
+    }
+}
