@@ -6,10 +6,10 @@
 
 This challenge was designed by [Frontend Mentor](https://www.frontendmentor.io).
 
-I created a CSS archive to solve this challenge and used spans to setup every item.
+I created a CSS archive to solve this challenge, used flexbox and spans to setup every item.
 
-- [Repository](https://github.com/rafa1off/qr-code-component-main)
-- [Live URL](https://rafa1off.github.io/qr-code-component-main/)
+- [Repository](https://github.com/rafa1off/results-summary-frontendmentor)
+- [Live URL](https://rafa1off.github.io/results-summary-frontendmentor/)
 
 ## My links:
 
